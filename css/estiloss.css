@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    display: flex;
+}
+
+nav{
+    background-color: rgb(236, 216, 190);
+    height: 12vh;
+    display: flex;
+}
+
+.boton{
+    background-color: rgb(194, 157, 109);
+    color: whitesmoke;
+}
+
+header{
+    background-color: rgb(68, 168, 230);
+    height:10vh;
+    text-align: center;
+}
+
+article{
+    background-color: brown;
+}
+
+/*cajas*/
+.container2{
+    flex: grid;
+    display: flexbox
+}
+
+/*active*/
+h1{
+    text-align: center;
+}
+.caja1{
+    background-color:rgb(176, 223, 195);
+    height:auto;
+    text-align: left;
+}
+
+a:active{
+color: rgb(43, 226, 217);
+}
+/*termina active*/
+
+
+/*:checked*/
+.caja2{
+    background-color: rgb(204, 220, 223);
+    display: flexbox;
+    height: auto;
+    text-align: left;
+}
+
+option:checked{
+    color: rgb(255, 0, 76);
+}
+/*termina checked*/
+
+
+/*default*/
+.caja3{
+    background-color:lightblue;
+    height: auto;
+}
+
+input:default {
+    box-shadow: 0 0 2px 1px red;
+}
+  
+input:default + label {
+    color: red;
+}
+/*termina default*/
+
+
+/*disable*/
+.caja4{
+    background-color: pink;
+    height: auto;
+    text-align: left;
+}
+
+input:disabled{
+    background-color: white;
+  }
+
+/*termina disable*/
+
+
+/*comienza dir*/
+.caja5{
+    background-color:peachpuff;
+    height:auto;
+}
+
+:dir(ltr) {
+    color: yellow;
+}
+      
+:dir(rtl) {
+    color: powderblue;
+}
+/* termina dir*/
+
+
+/* comienza empty*/
+.caja6{
+    background-color: rgb(166, 158, 216);
+    height: auto;
+    text-align: left;
+}
+ /* termina empty*/
+ 
+
+/*comienza enabled*/
+.caja7{
+    background-color:rgb(218, 236, 154);
+    height: auto;
+}
+input:enabled {
+    color:black;
+}
+/*termina enabled*/
+
+
+/* comienza first*/
+.caja8{
+    background-color: cornsilk;
+    height: auto;
+}
+
+@page:first{
+    margin-left:0;
+    margin-top: 0;
+  }
+  .primer{
+    page-break-after: always;
+  }
+      button:first-child{
+      color: rgb(252, 113, 0);
+      background-color: rgb(214, 214, 214);
+  }
+/*termina first*/
+
+
+/*comienza not*/
+.caja9{
+
+    background-color: pink;
+    height: auto;
+}
+
+.texto1:not(.texto2) {
+    color:rgb(218, 130, 15);
+    font-size:  30px;
+}
+
+.texto2 {
+    text-shadow: 0px 4px 4px rgb(17, 136, 33);
+    color: rgb(194, 255, 53);
+    font-size: 30px;
+}
+/*termina not*/
+
+
+/*comienza first-child*/
+.caja10{
+    background-color: lightblue;
+    height: auto
+}
+
+.texto:first-child{
+    color: rgb(172, 52, 146);
+  }
+/*termina first-child*/
+
+
+/* comienza first-of-type*/
+.caja11{
+    background-color:rgb(204, 220, 223);
+    height: auto
+}
+
+.basura:first-of-type {
+    color: red;
+    font-style: italic;
+  } 
+/* termina first-of-type*/
+
+
+/*comienza fullscreen*/
+.caja12{
+    background-color:rgb(176, 223, 195);
+    height: auto;
+}
+/*termina fullscreen*/
+
+
+/*comienza focus*/
+.caja13{
+    background-color: cornsilk;
+    height: auto;
+}
+
+.rojo-input:focus {
+    background: rgb(202, 234, 238);
+    color: red;
+}
+      
+.azul-input:focus {
+    background: rgb(250, 252, 131);
+    color: blue;
+}
+
+.caja14{
+    background-color: rgb(218, 236, 154);
+    height: auto;
+}
+

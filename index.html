@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estiloss.css">
+    <script src="css/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!--pa navbar-->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="https://pacgrafica.com">Pseudo-clases</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Pseudo-clases</a>
+                </li>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn boton" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </nav>
+
+      <!--pa el título-->
+      <header id="header">
+      <h1><p>pseudo-clases<p></h1>
+      </header>
+
+    <!--contenedor y row que funciona para sostener las cajas-->
+    <article class="container 2">
+      <div class="row">
+
+        <!--caja 1-->
+          <div class="caja1 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12">
+            <h1>:active</h1>
+          <p>Funciona cuando el usuario activa un elemento, por ejemplo cuando pulsa con el ratón sobre un elemento. El estilo se aplica durante un espacio de tiempo prácticamente imperceptible, ya que sólo dura desde que el usuario pulsa el botón del ratón hasta que lo suelta.</p>
+            <a href="https://pacgrafica.com">Este enlace cambiará a un color aguamarina mientras se hace clic sostenido en él.</a>
+          </div>
+
+          <!--caja 2-->
+          <div class="caja2 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12">
+            <h1>:checked</h1>
+          <b><p>¿Te gusta producción multimedia? (esta selecciona solo una opción)</p></b>
+
+            <div>
+              <input type="radio" name="my-input" id="si">
+              <label for="si">Sí</label>
+            &nbsp;
+              <input type="radio" name="my-input" id="no">
+              <label for="no">No</label>
+            </div>
+
+            &nbsp;
+            <div>
+            <b><p>¿Te gusta alguna de estas carreras? (esta selecciona varias opciones)</p></b>
+              <input type="checkbox" name="my-checkbox" id="opt-in">
+              <label for="opt-in">Diseño gráfico</label>
+              <br>
+              <input type="checkbox" name="my-checkbox" id="opt-in">
+              <label for="opt-in">Diseño Industrial</label>
+            </div>
+
+            &nbsp;
+            <div>
+              <b><p>¿Cuál prefieres tú?</p></b>
+            &nbsp;
+            <select name="my-select" id="dulces">
+              <option value="opt1">Chocolates</option>
+              <option value="opt2">Helados</option>
+              <option value="opt3">Caramelos</option>
+            </select>
+            </div>
+          </div>
+
+          <!--caja 3-->
+          <div class="caja3 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12">
+            <h1>:default</h1>
+            <p>Representa cualquier elemento de formulario que sea el predeterminado entre un grupo de elementos relacionados.</p>
+
+            <b><p>¿Que estación prefieres?</p></b>
+
+            <input type="radio" name="season" id="spring">
+            <label for="spring">Primavera</label>
+            <br>
+            <input type="radio" name="season" id="summer" checked>
+            <label for="summer">Verano</label>
+            <br>
+            <input type="radio" name="season" id="winter">
+            <label for="winter">Invierno</label>
+            <br>
+            <input type="radio" name="season" id="fall">
+            <label for="fall">Otoño</label>
+
+
+          </div>
+
+          <!--caja 4 (disabled)-->
+          <div class="caja4 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12">
+            <h1>:disable</h1>
+            <p>Representa a cualquier elemento deshabilitado. Un elemento se encuentra deshabilitado si no puede ser activado <b>(por ejemplo ser selecionado, hacer click en él o aceptar texto de entrada).</b></p>
+
+            <form action="#">
+              <fieldset id="billing">
+                <b><legend>Dirección de facturación</legend></b>
+                
+                <b><label for="billing_is_shipping">Dirección de envío:</label></b>
+                <br>
+                <input type="texto" placeholder="Dirección" disabled>
+              </fieldset>
+            </form>
+          </div>
+
+           <!--caja 5 (dir)-->
+          <div class="caja5 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12">
+            <h1>:dir</h1>
+            <p>Trabaja en función de la direccionalidad del texto contenido en ellos.</p>
+            <div dir="ltr">
+              <p>Hola mundo!</p>
+            </div>
+
+            <div dir="rtl">
+                <p>hola mundo como estás?</p>
+            </div>                     
+          </div>
+
+          <!--caja 6 (empty)-->
+          <div class="caja6 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12">
+            <h1>:empty</h1>
+            <p>Representa cualquier elemento que no tenga hijos. Los hijos pueden ser nodos de elemento o texto (incluido el espacio en blanco).</p>
+          </div>
+
+          <!--caja 7 (enabled)-->
+          <div class="caja7 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12">
+            <h1>:enabled</h1>
+            <p>Representa cualquier elemento habilitado. Un elemento está habilitado si puede ser activado (es decir seleccionado, se puede hacer click en él, acepta que se le introduzca texto, etc).</p>
+
+            <form>
+              <b><label for="Nombre">Nombre Completo</label></b>
+              <input type="text" id="Nombre">
+            
+              <label for="SecondField"></label>
+              <input type="button" value="Enviar">
+            </form>
+          </div>
+
+          <!--caja 8 (first)-->
+          <div class="caja8 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12">
+            <h1 class="tcaja">:first</h1>
+            <p>Representa la primera página de un documento impreso. Y es utilizada con la regla-at @page</p>
+            <img src="imagess/rbd1.jpg" alt="ola1" width="40%">
+            &nbsp;
+            <img src="imagess/rbd2.avif" alt="ola2" width="55%">
+            <br>
+            <br>
+            <center><button class="imprimir">Imprimir</button></center>
+          </div>
+
+          <!--caja 9 (not)-->
+          <div class="caja9 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12">
+            <h1>:not</h1>
+            <p>Nos ayuda a apuntar con nuestra regla hacia elementos que no coinciden con una lista de selectores. Se lo conoce como la pseudo-clase de negación porque se usa para evitar que se seleccionen elementos específicos.</p>
+
+            <p class="texto1">ola</p>
+            <p class="texto2">ke</p>
+          </div>
+
+          <!--caja 10 (first-child)-->
+          <div class="caja10 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12">
+            <h1>:first-child</h1>
+            <p>Representa el primer elemento entre un grupo de elementos hermanos.</p>
+
+            <br>
+
+            <div>
+              <p class="texto">¡Este texto está seleccionado!</p>
+              <p class="texto">Este texto no está seleccionado.</p>
+            </div>
+            
+            <div>
+              <h4>Este texto no está seleccionado: no es un 'p'.</h2>
+              <p class="texto">Este texto no está seleccionado.</p>
+            </div> 
+          </div>
+
+
+          <!--caja 11 (first-of-type)-->
+          <div class="caja11 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12">
+            <h1>:first-of-type</h1>
+            <p>Representa el primer elemento de su tipo entre un grupo de elementos hermanos.</p>
+
+            <div>
+            <h2>Encabezado</h2>
+            <p class="basura">Parráfo</p>
+            <p class="basura">Párrafo 2</p>
+            </div>
+
+          </div>
+
+
+          <!--caja 12 (fullscreen)-->
+          <div class="caja12 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12">
+            <h1>:fullscreen</h1>
+            <p>Representa un elemento que se muestra cuando el navegador está en modo de pantalla completa.</p>
+          </div>
+
+          <!--caja 13 (focus)-->
+          <div class="caja13 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12">
+            <h1>:focus</h1>
+            <p>Representa un elemento (como una entrada de formulario) que ha recibido el foco. Generalmente se activa cuando el usuario hace clic, toca un elemento o lo selecciona con la tecla "Tab" del teclado</p>
+            
+            <input class="rojo-input" value="Voy a ser de color rojo cuando enfoque.">
+            <br>
+            <input class="azul-input" value="Voy a ser de color azul cuando enfoque.">
+          </div>
+
+          <div class="caja14 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja15 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja16 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja17 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja18 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja19 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja20 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja21 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja22 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja23 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja24 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja25 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja26 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja27 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja28 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja29 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja30 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja32 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja33 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja34 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja35 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja36 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja37 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+          <div class="caja38 col-lg-3 col-xl-3 col-xxl-3 col-md-6 col-sm-12 col-12"></div>
+      </div>
+      <script>
+        document.querySelector(".imprimir").onclick = function () {
+          window.print();
+      }
+      </script>
+  </body>
+</html>
