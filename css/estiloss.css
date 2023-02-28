@@ -225,4 +225,46 @@ input:enabled {
     background-color: rgb(218, 236, 154);
     height: auto;
 }
+/*termina focus*/
 
+/*comienza hover*/
+.caja15{
+    background-color:rgb(176, 223, 195);
+    height: auto;
+}
+
+a:hover {
+    color: rgb(197, 130, 41);
+  }
+/*termina hover*/
+
+  .caja16{
+    background-color:rgb(222, 176, 223);
+    height: auto;
+}
+
+.caja17{
+    background-color:rgb(53, 26, 204);
+    height: auto;
+}
+
+.caja18{
+    background-color:rgb(176, 223, 195);
+    height: auto;
+}
+.caja19{
+    background-color:rgb(223, 176, 188);
+    height: auto;
+}
+.caja20{
+    background-color:rgb(223, 176, 186);
+    height: auto;
+}
+.caja21{
+    background-color:rgb(179, 176, 223);
+    height: auto;
+}
+.caja22{
+    background-color:rgb(223, 204, 176);
+    height: auto;
+}
