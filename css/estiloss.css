@@ -220,28 +220,38 @@ input:enabled {
     background: rgb(250, 252, 131);
     color: blue;
 }
+/*termina focus*/
 
+
+/*comienza hover*/
 .caja14{
     background-color: rgb(218, 236, 154);
     height: auto;
 }
-/*termina focus*/
-
-/*comienza hover*/
-.caja15{
-    background-color:rgb(176, 223, 195);
-    height: auto;
-}
-
 a:hover {
     color: rgb(197, 130, 41);
   }
 /*termina hover*/
 
-  .caja16{
+
+/*comienza indeterminate*/
+.caja15{
+    background-color:rgb(176, 223, 195);
+    height: auto;
+}
+
+.indeterminate{
+    color: teal;
+}
+/*termina indeterminate*/
+
+
+.caja16{
     background-color:rgb(222, 176, 223);
     height: auto;
 }
+/*termina indeterminate*/
+
 
 .caja17{
     background-color:rgb(53, 26, 204);
